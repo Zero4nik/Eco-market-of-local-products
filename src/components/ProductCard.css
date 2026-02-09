@@ -1,0 +1,146 @@
+.ProductCardStyle{
+        box-shadow:0 4px 8px rgba(0, 0, 0, 0.16);
+        border-radius: 10px;
+        margin: 10px;
+        padding: 20px;
+        min-height: 350px;
+        width: 202px;
+        position: relative;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        transition: 0.35s linear
+    }
+.ProductCardStyle:hover{
+    box-shadow:0 8px 16px rgba(0, 0, 0, 0.16); 
+    transform: translateY(-5px);
+}
+.CardImg {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 2px solid white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    position: relative;
+    left: 50%;
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+.CardImg.square-rounded {
+    border-radius: 15px;
+}
+.CardBtn{
+    border-radius: 10px;
+    background-color: gray;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: auto;
+}
+.product-info{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.ProductCardBtn{
+     width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-bottom: 5px;
+}
+@media (max-width: 768px) {
+  .ProductCardStyle {
+    width: 100%;
+    max-width: 160px;
+    min-height: 300px;
+    padding: 12px;
+    margin: 8px 5px;
+  }
+
+  .CardImg {
+    width: 65px;
+    height: 65px;
+  }
+
+  .CardName {
+    font-size: 14px;
+    margin: 8px 0;
+    line-height: 1.3;
+    min-height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .CardPrice {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 8px 0 12px;
+  }
+
+  .ProductCardBtn {
+    padding: 10px 8px;
+    font-size: 14px;
+    min-height: 36px;
+    margin-bottom: 6px;
+    width: 100%;
+  }
+
+  .product-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    justify-content: center;
+    margin: 8px 0;
+  }
+
+  .new-badge,
+  .out-of-stock {
+    font-size: 11px;
+    padding: 3px 6px;
+  }
+
+  .ProductCardStyle:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .ProductCardStyle {
+    max-width: 140px;
+    min-height: 280px;
+    padding: 10px;
+  }
+
+  .CardImg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .CardName {
+    font-size: 13px;
+  }
+
+  .ProductCardBtn {
+    padding: 9px 6px;
+    font-size: 13px;
+    min-height: 34px;
+  }
+}
+
+@media (max-width: 360px) {
+  .products-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .ProductCardStyle {
+    max-width: 100%;
+    margin: 8px 0;
+  }
+}

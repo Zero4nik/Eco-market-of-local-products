@@ -1,0 +1,91 @@
+body{
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 
+'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 
+'Helvetica Neue', sans-serif;
+line-height: 1.5;
+text-rendering: optimizeSpeed;
+background-color: var(--color-background); 
+  color: var(--color-text); 
+  min-height: 100vh;
+  background:url('/src/assets/selHoze.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  backdrop-filter: blur(3px);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ul,
+ol {
+  list-style: none;
+}
+a{
+    text-decoration: none;
+    color:inherit
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+button{
+    cursor: pointer;
+    color: inherit;
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    backdrop-filter: blur(1px);
+    background-attachment: scroll;
+    background-size: cover;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  :root {
+    --font-size-xs: 0.7rem;
+    --font-size-sm: 0.8rem;
+    --font-size-base: 0.9rem;
+    --font-size-lg: 1rem;
+    --font-size-xl: 1.1rem;
+    --font-size-2xl: 1.25rem;
+    --font-size-3xl: 1.5rem;
+    --font-size-4xl: 1.75rem;
+    --font-size-5xl: 2rem;
+    
+    --space-xs: 0.2rem;
+    --space-sm: 0.4rem;
+    --space-md: 0.75rem;
+    --space-lg: 1rem;
+    --space-xl: 1.25rem;
+    --space-2xl: 1.5rem;
+  }
+  
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 13px;
+    backdrop-filter: none;
+  }
+  
+  :root {
+    --font-size-base: 0.85rem;
+    --space-md: 0.5rem;
+  }
+}

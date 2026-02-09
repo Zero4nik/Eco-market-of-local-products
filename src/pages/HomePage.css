@@ -1,0 +1,144 @@
+.bannerAdvantage {
+  border: 2px solid var(--color-border);
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  min-height: 150px; 
+  padding: 10px;
+  border-radius: var(--border-radius-lg);
+  cursor: pointer;
+  margin: 0px 50px 0px 50px;
+  box-shadow: var(--shadow-large);
+  transition:var(--transition-slow);
+  padding: 20px;
+  flex: 1;
+  background: rgba(255, 255, 255, 0.85);
+}
+.bannerAdvantage:hover{
+    transform: translateY(-5px);
+}
+.Advantage {
+  display: flex;
+  margin-top: 20px;
+}
+.AllBanner{
+     display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: stretch;
+}
+
+.AllBanner,
+.bannerAdvantage {
+  flex: 1;
+   margin: 10px 15px 0px 15px;
+}
+
+.whatMe {
+  margin-top: 15px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  min-height: 40px; 
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 24px;
+}
+.bannerHeader,
+.populationProduct,
+.product{
+    display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+.catalogyBtn{
+    padding: 15px 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    margin-top: 20px ;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--color-primary);
+    transition: var(--transition-slow);
+    background: linear-gradient(to right, #4caf50 50%, #388e3c 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.catalogyBtn:hover{
+background-position: left bottom;
+}
+@media (max-width: 768px) {
+  .HomePageInfo {
+    padding: 0 15px;
+  }
+
+  .whatMe {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0 10px;
+    margin-bottom: 15px;
+  }
+
+  .AllBanner {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .bannerAdvantage {
+    margin: 0;
+    width: 100%;
+    min-height: auto;
+    padding: 15px;
+  }
+
+  .bannerHeader {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .bannerAdvantage p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .populationProduct {
+    font-size: 1.4rem;
+    margin: 25px 0 15px;
+  }
+
+  .catalogyBtn {
+    width: 90%;
+    max-width: 300px;
+    padding: 14px;
+    margin: 20px auto;
+    display: block;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .whatMe {
+    font-size: 1.1rem;
+  }
+
+  .bannerAdvantage {
+    padding: 12px;
+    margin-bottom: 10px;
+  }
+
+  .bannerHeader {
+    font-size: 1rem;
+  }
+
+  .catalogyBtn {
+    width: 100%;
+    padding: 16px;
+  }
+}

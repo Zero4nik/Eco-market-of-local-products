@@ -1,0 +1,140 @@
+
+:root {
+  /* Основные цвета */
+  --color-primary: #2E7D32;      /* Травяной зеленый - основной акцент */
+  --color-primary-light: #4CAF50; /* Светло-зеленый для ховеров */
+  --color-primary-dark: #1B5E20;  /* Темно-зеленый для активных состояний */
+   --bg-primary: #84f514;
+  /* Вторичные цвета */
+  --color-secondary: #FF9800;     /* Теплый оранжевый - акцент корзины/действий */
+  --color-secondary-light: #FFB74D;
+  --color-secondary-dark: #F57C00;
+
+  
+  --primary-light: #e8f5e9;
+  --primary-main: #4caf50;
+  --primary-dark: #2e7d32;
+  --secondary-light: #e3f2fd;
+  --secondary-main: #2196f3;
+  --secondary-dark: #1565c0;
+  --accent-purple: #9c27b0;
+  --accent-orange: #ff5722;
+  --text-dark: #1b5e20;
+  --text-light: #ffffff;
+  --bg-light: #f9f9f9;
+  --bg-white: #ffffff;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  
+  
+  /* Нейтральные цвета */
+  --color-background: #F9F7F2;    /* Кремовый фон - натуральный, мягкий */
+  --color-surface: #FFFFFF;       /* Белый для карточек, форм */
+  --color-text: #1A1A1A;          /* Почти черный для основного текста */
+  --color-text-light: #666666;    /* Серый для второстепенного текста */
+  --color-border: #E0E0E0;        /* Светло-серый для границ */
+  --color-disabled: #BDBDBD;  
+  --bg-mint: #f0f7f3;    
+  
+  /* Статусные цвета */
+  --color-success: #4CAF50;       /* Успех */
+  --color-error: #F44336;         /* Ошибка, валидация */
+  --color-warning: #FFC107;       /* Предупреждение */
+  --color-info: #2196F3;          /* Информация */
+  
+  /* Оттенки для сезонности */
+  --color-spring: #81C784;        /* Весенний зеленый */
+  --color-summer: #FFF176;        /* Летний желтый */
+  --color-autumn: #FF8A65;        /* Осенний оранжевый */
+  --color-winter: #90CAF9;        /* Зимний голубой */
+  
+  /* Тени */
+  --shadow-small: 0 2px 4px rgba(0, 0, 0, 0.08);
+  --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.12);
+  --shadow-large: 0 8px 16px rgba(0, 0, 0, 0.16);
+  
+  /* Скругления */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+  --border-radius-full: 9999px;
+  
+  /* Отступы (Spacing System) */
+  --space-xs: 0.25rem;   /* 4px */
+  --space-sm: 0.5rem;    /* 8px */
+  --space-md: 1rem;      /* 16px */
+  --space-lg: 1.5rem;    /* 24px */
+  --space-xl: 2rem;      /* 32px */
+  --space-2xl: 3rem;     /* 48px */
+  
+  /* Максимальные ширины контейнеров */
+  --container-xs: 20rem;   /* 320px */
+  --container-sm: 24rem;   /* 384px */
+  --container-md: 28rem;   /* 448px */
+  --container-lg: 32rem;   /* 512px */
+  --container-xl: 36rem;   /* 576px */
+  --container-2xl: 42rem;  /* 672px */
+  --container-3xl: 48rem;  /* 768px */
+  --container-4xl: 56rem;  /* 896px */
+  --container-5xl: 64rem;  /* 1024px */
+  --container-6xl: 72rem;  /* 1152px */
+  --container-7xl: 80rem;  /* 1280px */
+  
+  /* Шрифты */
+  --font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-family-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-family-mono: 'SF Mono', Monaco, 'Courier New', monospace;
+  
+  /* Размеры шрифтов */
+  --font-size-xs: 0.75rem;     /* 12px */
+  --font-size-sm: 0.875rem;    /* 14px */
+  --font-size-base: 1rem;      /* 16px */
+  --font-size-lg: 1.125rem;    /* 18px */
+  --font-size-xl: 1.25rem;     /* 20px */
+  --font-size-2xl: 1.5rem;     /* 24px */
+  --font-size-3xl: 1.875rem;   /* 30px */
+  --font-size-4xl: 2.25rem;    /* 36px */
+  --font-size-5xl: 3rem;       /* 48px */
+  
+  /* Высота строки */
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+  
+  /* Толщина шрифта */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Z-index слои */
+  --z-index-dropdown: 10;
+  --z-index-sticky: 20;
+  --z-index-fixed: 30;
+  --z-index-modal-backdrop: 40;
+  --z-index-modal: 50;
+  --z-index-popover: 60;
+  --z-index-tooltip: 70;
+  
+  /* Анимации */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 350ms ease;
+}
+
+/* Темная тема (опционально, для будущего) */
+[data-theme="dark"] {
+  --color-background: #121212;
+  --color-surface: #1E1E1E;
+  --color-text: #FFFFFF;
+  --color-text-light: #B0B0B0;
+  --color-border: #333333;
+}
